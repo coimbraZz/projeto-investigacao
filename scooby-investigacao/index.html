@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooby-Doo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="logo" href="index.html" aria-label="Mistério - início">
+                <img src="logo.png" alt="Logo">
+                <span class="logo-texto">
+                    <strong>SCOOBY-<span>DOO</span> </strong>
+                </span>
+            </a>
+
+            <span class="selo">MISTÉRIO Nº 01 <span>•</span> CONFIDENCIAL</span>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="apresentacao">
+            <p class="chamada">CENTRAL DE INVESTIGAÇÃO</p>
+            <h1>Interrogatório em andamento</h1>
+            <p class="introducao">
+                Responda às dez perguntas e ajude a equipe a descobrir o seu nível de envolvimento no mistério.
+            </p>
+        </section>
+
+        <section class="cartao-teste" aria-live="polite">
+            <div class="topo-cartao">
+                <span class="etiqueta"><span class="ponto"></span> PERGUNTAS DO CASO</span>
+                <span id="numero-pergunta" class="numero-pergunta">Pergunta 1 de 10</span>
+            </div>
+
+            <div class="progresso">
+                <div id="barra-progresso" class="barra-progresso"></div>
+            </div>
+
+            <div class="area-pergunta">
+                <p class="instrucao">LEIA COM ATENÇÃO</p>
+                <h2 id="pergunta">Você conhecia a vítima?</h2>
+                <p class="dica">Escolha uma das opções para seguir para a próxima pergunta.</p>
+            </div>
+
+            <div id="opcoes" class="opcoes">
+                <button type="button" id="botao-sim" class="botao botao-sim">Sim</button>
+                <button type="button" id="botao-nao" class="botao botao-nao">Não</button>
+            </div>
+
+            <p id="aviso" class="aviso">Toda resposta é uma pista!</p>
+
+            <button type="button" id="botao-finalizar" class="botao botao-finalizar" hidden>
+                Finalizar Teste
+            </button>
+        </section>
+
+        <section id="resultado" class="cartao-resultado" aria-live="polite" hidden>
+            <p class="chamada">RELATÓRIO DA INVESTIGAÇÃO</p>
+            <h2 id="classificacao">Resultado</h2>
+            <p id="quantidade-sim" class="quantidade-sim"></p>
+            <p id="mensagem-resultado" class="mensagem-resultado"></p>
+            <button type="button" id="botao-recomecar" class="botao botao-recomecar">
+                Refazer teste
+            </button>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>MISTÉRIO <span>•</span> A verdade sempre deixa pistas </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
